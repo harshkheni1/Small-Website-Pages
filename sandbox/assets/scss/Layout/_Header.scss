@@ -1,0 +1,138 @@
+.header {
+  .navbar {
+    background-color: transparent;
+    height: 82px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .navbar-nav {
+      li {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+        a {
+          color: $black;
+          font-weight: 700;
+          letter-spacing: normal;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
+    div {
+      ul {
+        li {
+          a.dropdown-toggle {
+            text-transform: uppercase;
+            color: $black;
+            font-weight: 700;
+            &::after {
+              color: $yellow;
+            }
+          }
+          .dropdown-menu {
+            border-radius: 0.4rem;
+            box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+            min-width: 4rem;
+            border: none;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50px;
+            li {
+              a {
+                color: $black;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 0.2rem 1.5rem;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                  color: $yellow;
+                  background-color: $white;
+                }
+              }
+            }
+          }
+          i {
+            font-size: 22px;
+            color: $black;
+            margin-left: 0.8rem;
+            transition: all 0.5s;
+            cursor: pointer;
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      width: 24px;
+      height: 22px;
+      padding: 0;
+      cursor: pointer;
+      margin-left: 0.8rem;
+      .navbar-toggler-icon {
+        display: block;
+        width: 24px;
+        height: 3px;
+        transition: all 0.2s ease-in-out;
+        background: $gray;
+        position: relative;
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          width: 24px;
+          height: 3px;
+          left: 0;
+          transition: all 0.2s ease-in-out;
+          background: $gray;
+        }
+        &::before {
+          top: 7px;
+        }
+        &::after {
+          bottom: 7px;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .offcanvas-header {
+    display: none;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    animation: goDown 0.5s ease-in-out forwards;
+    .navbar {
+      box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+      background: rgba(255, 255, 255, 0.97);
+    }
+  }
+  @keyframes goDown {
+    0% {
+      top: -60px;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+.offcanvas-active .navbar-toggler-icon {
+  background: transparent !important;
+  &::before {
+    transform: translateY(0px) rotate(-45deg);
+    top: 0 !important;
+  }
+  &:after {
+    transform: translateY(0px) rotate(45deg);
+    bottom: 0 !important;
+  }
+}

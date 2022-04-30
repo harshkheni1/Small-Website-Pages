@@ -1,0 +1,40 @@
+.OurSolution {
+  background: linear-gradient(180deg, #fff8ef, rgba(255, 255, 255, 0) 100%);
+  margin-top: 50px;
+  padding-top: 120px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    border-left-color: $cream !important;
+    border-left-width: 100vw !important;
+    border-bottom-width: 4rem !important;
+    top: 0;
+    display: block;
+    right: 0;
+    border: 0 solid transparent;
+  }
+  ul {
+    li {
+      display: flex;
+      .ListIcon {
+        i {
+          height: 20px;
+          width: 20px;
+          background-color: $yellow-IconBg;
+          color: $yellow;
+          border-radius: 100%;
+          text-align: center;
+          line-height: 20px;
+          margin-top: 4px;
+          display: block;
+        }
+      }
+      .ListText {
+        display: block;
+        margin-left: 18px;
+        color: $gray;
+      }
+    }
+  }
+}

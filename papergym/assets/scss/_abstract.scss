@@ -1,0 +1,156 @@
+@mixin breakpoint($points) {
+  @if ($points == larger-desktop) {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  } @else if($points ==large-desktop) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if($points == desktop) {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if($points == tablets) {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if($points == phone) {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if($points == small-device) {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+}
+@mixin border-radius($num: 6px) {
+  border-radius: $num;
+  -webkit-border-radius: $num;
+  -moz-border-radius: $num;
+}
+@mixin transition($time: 0.5s) {
+  transition: all $time ease;
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  -o-transition: all $time ease;
+  -ms-transition: all $time ease;
+}
+// --------------------------------------------
+@mixin gradient-button($bg-color) {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
+  background: $bg-color;
+  padding: 16px 20px;
+  border-radius: 6px;
+  @include border-radius(6px);
+  width: fit-content;
+  @include transition(0.5s);
+  @content;
+}
+.yellowgradient-btn {
+  @include gradient-button(
+    linear-gradient(272.47deg, #f37b02 0.33%, #fcac1b 100%)
+  ) {
+    display: block;
+  }
+  &:hover {
+    // border-color:  #F37B02;
+    box-shadow: 0px 5px 24px rgba(247, 149, 15, 0.5);
+    color: $white;
+  }
+}
+.bluegradient-btn {
+  @include gradient-button(
+    linear-gradient(75.18deg, #541df8 10.14%, #280597 90.12%)
+  ) {
+    display: block;
+  }
+  &:hover {
+    background: linear-gradient(75.18deg, #280597 10.14%, #541df8 90.12%);
+    color: $white;
+  }
+}
+@mixin banner-common-btn($bg, $color, $border) {
+  width: 254px;
+  height: 58px;
+  color: $color;
+  background: $bg;
+  text-align: center;
+  line-height: 58px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  margin-top: 40px;
+  @include transition(0.5s);
+  @include border-radius(6px);
+}
+.video-btn {
+  background: linear-gradient(272.47deg, #f37b02 0.33%, #fcac1b 100%);
+  height: 78px;
+  width: 78px;
+  @include border-radius(100%);
+  line-height: 78px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0px 0px 0px 10px rgba(243, 123, 2, 0.4);
+  -moz-box-shadow: 0px 0px 0px 10px rgba(243, 123, 2, 0.4);
+  -webkit-box-shadow: 0px 0px 0px 10px rgba(243, 123, 2, 0.4);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  -webkit-animation: pulse 2s infinite;
+  -moz-animation: pulse 2s infinite;
+  -o-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  img {
+    border: none !important;
+    border-radius: 0px !important;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 10px rgba(243, 123, 2, 0.6);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(243, 123, 2, 0.6);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(243, 123, 2, 0);
+    -moz-box-shadow: 0px 0px 0px 15px rgba(243, 123, 2, 0);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(243, 123, 2, 0.6);
+  }
+
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 15px rgba(243, 123, 2, 0);
+  }
+}
+.common-page-ttl {
+  padding-top: 179px;
+  text-align: center;
+  h2 {
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 86px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    &:before {
+      position: absolute;
+      content: url(../images/banner-heading-shape.svg);
+      right: -90px;
+      top: 48px;
+    }
+  }
+}

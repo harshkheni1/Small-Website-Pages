@@ -1,0 +1,570 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coffee</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- -------BOOTSTRAP CSS----- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- ---animation css--- -->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- -----MATERIAL ICONS--------- -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- ----slick css--- -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- ----ANIMATION CSS----- -->
+
+    <!-- -------CUSTOM CSS----------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="custom_scrollbar">
+  <!-- -----CURSOR--- -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<!--BACK TO TOP BUTTON-->
+<div class="m-backtotop" aria-hidden="true">
+	<div class="arrow">
+		<i class="fa fa-arrow-up"></i>
+	</div>
+	<div class="text">
+		Back to top
+	</div>
+</div>
+    <!-- ----HEADER START-------- -->
+    <div class="main_header">
+        <header>
+            <div class="header" id="myHeader">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo.png" alt="Logo" class="img-fluid" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+                            <span>Menu</span>
+                        </button>
+                        <div class=" navbar-collapse" id="main_nav">
+                            <div class="offcanvas-header ">
+                                <button class="btn  btn-close float-right"> &times </button>
+
+                            </div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" aria-current="page" href="#">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Journals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Story</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="socila-media d-flex align-items-center">
+                                <li>
+                                    <a href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.28 0H0.72C0.32175 0 0 0.32175 0 0.72V17.28C0 17.6783 0.32175 18 0.72 18H17.28C17.6783 18 18 17.6783 18 17.28V0.72C18 0.32175 17.6783 0 17.28 0ZM15.201 5.25375H13.7633C12.636 5.25375 12.4178 5.78925 12.4178 6.57675V8.3115H15.1088L14.7578 11.0273H12.4178V18H9.612V11.0295H7.26525V8.3115H9.612V6.309C9.612 3.98475 11.0318 2.718 13.1063 2.718C14.1008 2.718 14.9535 2.79225 15.2033 2.826V5.25375H15.201Z" fill="current" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.942 5.31279C17.9319 4.557 17.7902 3.80874 17.5232 3.10145C17.2917 2.50486 16.938 1.96305 16.4848 1.51064C16.0317 1.05823 15.489 0.705162 14.8914 0.474C14.192 0.21191 13.4532 0.0701931 12.7064 0.0548842C11.7448 0.0119748 11.4399 0 8.999 0C6.55809 0 6.24522 6.6914e-08 5.29065 0.0548842C4.54414 0.0703057 3.80566 0.212021 3.10662 0.474C2.50894 0.705001 1.96615 1.05801 1.51296 1.51044C1.05977 1.96288 0.706175 2.50477 0.474789 3.10145C0.211737 3.79911 0.070092 4.53653 0.0559751 5.28185C0.0129942 6.24282 0 6.54718 0 8.98403C0 11.4209 -7.44727e-09 11.7322 0.0559751 12.6862C0.0709685 13.4326 0.211906 14.1691 0.474789 14.8686C0.706564 15.4651 1.06042 16.0068 1.51376 16.459C1.9671 16.9113 2.50995 17.2641 3.10762 17.4951C3.80474 17.7677 4.54335 17.9196 5.29165 17.9441C6.25422 17.987 6.55909 18 9 18C11.4409 18 11.7538 18 12.7084 17.9441C13.4552 17.9294 14.1941 17.788 14.8934 17.526C15.4908 17.2946 16.0334 16.9414 16.4865 16.489C16.9396 16.0367 17.2934 15.495 17.5252 14.8985C17.7881 14.2 17.929 13.4636 17.944 12.7162C17.987 11.7562 18 11.4518 18 9.01397C17.998 6.57712 17.998 6.26777 17.942 5.31279ZM8.993 13.5923C6.44014 13.5923 4.37206 11.5277 4.37206 8.97905C4.37206 6.43043 6.44014 4.36578 8.993 4.36578C10.2186 4.36578 11.3939 4.85182 12.2605 5.71698C13.1271 6.58213 13.614 7.75553 13.614 8.97905C13.614 10.2026 13.1271 11.376 12.2605 12.2411C11.3939 13.1063 10.2186 13.5923 8.993 13.5923ZM13.7979 5.27087C13.2011 5.27087 12.7203 4.78989 12.7203 4.19514C12.7203 4.05394 12.7482 3.91412 12.8023 3.78367C12.8565 3.65322 12.9358 3.53469 13.0358 3.43484C13.1358 3.335 13.2545 3.2558 13.3852 3.20176C13.5159 3.14773 13.6559 3.11991 13.7974 3.11991C13.9388 3.11991 14.0789 3.14773 14.2095 3.20176C14.3402 3.2558 14.4589 3.335 14.5589 3.43484C14.6589 3.53469 14.7383 3.65322 14.7924 3.78367C14.8465 3.91412 14.8744 4.05394 14.8744 4.19514C14.8744 4.78989 14.3926 5.27087 13.7979 5.27087Z" fill="current" />
+                                            <path d="M8.99288 11.9757C10.6507 11.9757 11.9945 10.634 11.9945 8.97902C11.9945 7.324 10.6507 5.98235 8.99288 5.98235C7.3351 5.98235 5.99121 7.324 5.99121 8.97902C5.99121 10.634 7.3351 11.9757 8.99288 11.9757Z" fill="current" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 2.13281C20.2123 2.49954 19.3788 2.74115 18.5259 2.85C19.4222 2.28768 20.0963 1.39433 20.4216 0.337507C19.5742 0.868407 18.6487 1.24091 17.6846 1.43907C17.2787 0.983222 16.7904 0.620586 16.2496 0.3732C15.7088 0.125813 15.1266 -0.00115656 14.5386 7.93799e-06C12.1577 7.93799e-06 10.2309 2.03438 10.2309 4.54218C10.2292 4.89101 10.2666 5.2388 10.3421 5.57812C8.6348 5.49236 6.96304 5.02573 5.43374 4.20808C3.90444 3.39043 2.55127 2.23976 1.46081 0.829693C1.07825 1.52068 0.875933 2.30908 0.875 3.1125C0.875 4.68749 1.64194 6.07968 2.8 6.8953C2.11388 6.87785 1.44182 6.68328 0.840875 6.32811V6.38436C0.840875 8.58748 2.32838 10.4203 4.29712 10.8375C3.92691 10.9432 3.5454 10.9968 3.16225 10.9968C2.89038 10.9974 2.61912 10.9691 2.35244 10.9125C2.89975 12.7172 4.49269 14.0297 6.37963 14.0672C4.84635 15.3332 2.9639 16.0175 1.02812 16.0125C0.68452 16.0119 0.341235 15.99 0 15.9468C1.96927 17.2941 4.25838 18.0068 6.59488 18C14.5294 18 18.8641 11.0765 18.8641 5.07187C18.8641 4.87499 18.8593 4.67812 18.8506 4.48593C19.6919 3.84471 20.4198 3.04786 21 2.13281Z" fill="current" />
+                                        </svg>
+
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.08984 5.84877V18H0.222656V5.84877H4.08984ZM4.33594 2.09673C4.34375 2.69346 4.14648 3.1921 3.74414 3.59264C3.3418 3.99319 2.8125 4.19346 2.15625 4.19346H2.13281C1.49219 4.19346 0.976562 3.99319 0.585938 3.59264C0.195313 3.1921 0 2.69346 0 2.09673C0 1.49183 0.201172 0.991144 0.603516 0.594687C1.00586 0.198229 1.53125 0 2.17969 0C2.82812 0 3.34766 0.198229 3.73828 0.594687C4.12891 0.991144 4.32812 1.49183 4.33594 2.09673ZM18 11.0354V18H14.1445V11.5014C14.1445 10.6431 13.9863 9.97071 13.6699 9.48433C13.3535 8.99796 12.8594 8.75477 12.1875 8.75477C11.6953 8.75477 11.2832 8.89578 10.9512 9.17779C10.6191 9.45981 10.3711 9.80926 10.207 10.2262C10.1211 10.4714 10.0781 10.8025 10.0781 11.2193V18H6.22266C6.23828 14.7384 6.24609 12.094 6.24609 10.0668C6.24609 8.03951 6.24219 6.8297 6.23438 6.43733L6.22266 5.84877H10.0781V7.61444H10.0547C10.2109 7.35286 10.3711 7.12398 10.5352 6.92779C10.6992 6.73161 10.9199 6.51907 11.1973 6.29019C11.4746 6.06131 11.8145 5.88352 12.2168 5.75681C12.6191 5.63011 13.0664 5.56676 13.5586 5.56676C14.8945 5.56676 15.9688 6.03065 16.7812 6.95845C17.5938 7.88624 18 9.24523 18 11.0354Z" fill="current" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ----banner section---- -->
+        <div class="banner_section">
+            <!-- <div class="container-fluid"> -->
+            <div class="banner_outer_border">
+                <div class="container">
+                    <div class="row  align-items-end">
+                        <div class="col-xxl-5 col-xl-4 col-lg-6 col-md-6 col-12">
+                            <span>Would You Like a Cup of Delicious Coffee?</span>
+                            <div class="has-animation animation-ltr" data-delay="10">
+                                <h1 class="bigger">Quality coffee</h1>
+                            </div>
+                            <div class="has-animation animation-rtl" data-delay="1000">
+                                <h4 class="text">from bean to cup</h4>
+                            </div>
+                            <div class="has-animation animation-ltr" data-delay="1500">
+                                <p class="text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.</p>
+                            </div>
+                            <div class="has-animation animation-ltr" data-delay="2000">
+                                <a href="#" class="common_btn mt-80 " role="button">order</a>
+                            </div>
+                            <div class="scroll-btn">
+                                <a href="#" class="scroll d-flex align-items-center"><span></span>Scroll Down</a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12">
+                            <div class="banner-image">
+                                <img src="assets/images/banner-image.png" alt="Banner" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-lg-12 col-md-12 col-12">
+                            <ul class="banner_list_content">
+                                <li>
+                                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing.</p>
+                                </li>
+                                <li>
+                                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing.</p>
+                                </li>
+                                <li>
+                                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing.</p>
+                                </li>
+                                <li>
+                                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="2s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- -----About Cofee--- -->
+    <div class="about_coffee">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-12 order-xxl-1 order-xl-1 order-lg-1 order-md-1 order-2">
+                    <div class="about_coffee_image text-center">
+                        <img src="assets/images/about.png" alt="About" class="img-fluid wow bounceIn " data-wow-delay=".25s">
+                    </div>
+                    <p class="d-flex align-items-center justify-content-center bottom_img_dis wow fadeInUp" data-wow-delay=".25s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.
+                    </p>
+                </div>
+                <div class="offset-xxl-1 col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-12 order-xxl-2 order-xl-2 order-lg-2 order-md-2 order-1">
+
+                    <h3 class="common_ttl" data-splitting>There`s nothing like a great cup of coffee.</h3>
+                    <p class="mt-100 wow fadeInUp" data-wow-delay=".25s">Roastalgia provides Artisan Co#ee to Nostalgic Creative Co#ee Lovers in
+                        a Romantic Charming Vintage fashion with a warm magical voice. Helping
+                        them feel home and express their stories/writings with a similar nostalgic
+                        community.</p>
+                    <p class="mt-80 wow fadeInUp" data-wow-delay=".5s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.
+                    </p>
+                    <h5 class="mt-100 wow fadeInUp" data-wow-delay="1s">Get a cup of ROASTALGIA coffee near you. </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------slider---- -->
+    <div class="coffee_slider_outer">
+        <!-- <div class="position-relative z-9"> -->
+        <div class="container">
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                            <span class="coffee_name">
+                                Artisan Coffee
+                            </span>
+                            <h2 class="main_heading_slider ">Roastalgia Midnight in Paris</h2>
+                            <h4 class="light_text">Moments to share</h4>
+                            <p class="mt-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.</p>
+                            <a href="#" class="common_btn mt-60" role="button">order</a>
+                            <div class="slider_bottom_text left_text">
+                                <h4>Roastalgia Casablanca</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat... </p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                            <div class="slider_image text-center position-relative">
+                                <img src="assets/images/slider_image_1.png" alt="Slider" class="img-fluid">
+                                <div class="slider-image-bg">
+                                    <img src="assets/images/slider-image-bg.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                            <div class="slider_bottom_text right_text">
+                                <h4>Roastalgia Casablanca</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat... </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                            <span class="coffee_name">
+                                Artisan Coffee
+                            </span>
+                            <h2 class="main_heading_slider">Roastalgia Midnight in Paris</h2>
+                            <h4 class="light_text">Moments to share</h4>
+                            <p class="mt-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.</p>
+                            <a href="#" class="common_btn mt-60" role="button">order</a>
+                            <div class="slider_bottom_text left_text">
+                                <h4>Roastalgia Casablanca</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat... </p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                            <div class="slider_image text-center position-relative">
+                                <img src="assets/images/slider_image_1.png" alt="Slider" class="img-fluid">
+                                <div class="slider-image-bg">
+                                    <img src="assets/images/slider-image-bg.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                            <div class="slider_bottom_text right_text">
+                                <h4>Roastalgia Casablanca</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat... </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- ------Latest News--- -->
+    <div class="latest_news">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                    <h2 class="common_sec_ttl mb-0" data-splitting>Latest news</h2>
+                    <h4 class="common_light_text" data-splitting>Moments to share</h4>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                    <p class="w-66 wow fadeInRight" data-wow-delay="0.25s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12 mt-90 p-0">
+                    <div class="latest_news_block light_brown position-relative wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="latest_news_block_inner">
+                            <div class="image_coffee">
+                                <img src="assets/images/coffee_1.png" alt="Coffee" class="img-fluid">
+                            </div>
+                            <div class="top_block">
+                                <h5 class="block_ttl">Hugh Bailey</h5>
+                                <h5 class="news_light_text">23 Sep 2020</h5>
+                                <h3>Artisan coffee Roastery & Lounge.</h3>
+                            </div>
+                            <div class="bottom_block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet. Donec diam purus eget et fermentum placerat...</p>
+                                <a href="#" class="common_btn mt-60" tabindex="0" role="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12 mt-90 p-0">
+                    <div class="latest_news_block light_green position-relative wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="latest_news_block_inner">
+                            <div class="image_coffee">
+                                <img src="assets/images/coffee_2.png" alt="Coffee" class="img-fluid">
+                            </div>
+                            <div class="top_block">
+                                <h5 class="block_ttl">Kyle Lawrence</h5>
+                                <h5 class="news_light_text">15 Sep 2020</h5>
+                                <h3>Coffee is ideas generator.</h3>
+                                &nbsp;
+                            </div>
+                            <div class="bottom_block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet. Donec diam purus eget et fermentum placerat...</p>
+                                <a href="#" class="common_btn mt-60" tabindex="0" role="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12 mt-90 p-0">
+                    <div class="latest_news_block light_gray position-relative wow fadeInUp" data-wow-delay="1s">
+                        <div class="latest_news_block_inner">
+                            <div class="image_coffee">
+                                <img src="assets/images/coffee_3.png" alt="Coffee" class="img-fluid">
+                            </div>
+                            <div class="top_block">
+                                <h5 class="block_ttl">Layla Stevens</h5>
+                                <h5 class="news_light_text">5 Aug 2020</h5>
+                                <h3>A place for better brands.</h3>
+                                &nbsp;
+                            </div>
+                            <div class="bottom_block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet. Donec diam purus eget et fermentum placerat...</p>
+                                <a href="#" class="common_btn mt-60" tabindex="0" role="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----stay tuned----- -->
+    <div class="stay_tuned mt-140">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                    <h2 class="common_sec_ttl mb-0" data-splitting>Stay tuned!</h2>
+                    <h4 class="common_light_text" data-splitting>subscribe to keep abreast of events</h4>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                    <p class="w-66 wow fadeInRight" data-wow-delay="0.25s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-8 col-xl-9 col-lg-10 col-md-12 col-12">
+                    <div class="d-flex align-items-center mt-70">
+                        <input type="text" class="form-control" placeholder="Enter your e-mail address">
+                        <a href="#" class="common_btn ml-20" tabindex="0" role="button">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---testimonials slider ---- -->
+    <div class="client_slider_block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="client_slider">
+                        <div class="slider__item">
+                            <div class="row">
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12 d-xxl-block d-xl-block d-lg-block d-md-none d-none">
+                                    <div class="qoute_image mt-60">
+                                        <img src="assets/images/qoute.png" alt="Qoute" class="img-fluid mx-auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
+                                    <div class="client_slider_image">
+                                        <img src="assets/images/client_slider_image_1.png" alt="Coffee" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-12">
+                                    <h4>The journey of dreams</h4>
+                                    <p>“Proffesionals in their craft! All products were super amazing with strong attention to details, comps, and overall viibe”</p>
+                                    <h5 class="client_name">Layla Stevens</h5>
+                                    <span class="date">Customer / 5 Aug 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="row">
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12 d-xxl-block d-xl-block d-lg-block d-md-none d-none">
+                                    <div class="qoute_image mt-60">
+                                        <img src="assets/images/qoute.png" alt="Qoute" class="img-fluid mx-auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
+                                    <div class="client_slider_image">
+                                        <img src="assets/images/client_slider_image_1.png" alt="Coffee" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-12">
+                                    <h4>The journey of dreams</h4>
+                                    <p>“Proffesionals in their craft! All products were super amazing with strong attention to details, comps, and overall viibe”</p>
+                                    <h5 class="client_name">Layla Stevens</h5>
+                                    <span class="date">Customer / 5 Aug 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----GEt In TOUCh---- -->
+    <div class="get_in_touch position-relative">
+        <div class="get_in_touch_bg">
+            <img src="assets/images/getInTochBg.png" alt="Get In Touch" class="img-fluid">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div class="get_in_touch_content">
+                        <h2 class="common_sec_ttl mb-0" data-splitting>Get in touch</h2>
+                        <h4 class="common_light_text" data-splitting>from bean to cup</h4>
+                        <p class="mt-60 w-65 wow fadeInLeft" data-wow-delay="0.25s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl amet tempus, rutrum egestas feugiat faucibus. Non nibh massa in adipiscing. Arcu non quam accumsan quam mauris, fermentum. Donec diam purus eget et fermentum placerat nec amet.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                    <ul class="get_in_touch_contact">
+                        <li class="wow fadeInUp" data-wow-delay="0.25s">
+                            <span>Call us</span>
+                            <a href="#">(816)-582-9023</a>
+                        </li>
+                        <li class="mt-40 wow  fadeInUp" data-wow-delay="0.5s">
+                            <span>Email us</span>
+                            <a href="#">layla.stevens@example.com</a>
+                        </li>
+                        <li class="mt-40 wow fadeInUp" data-wow-delay="1s">
+                            <span>Email us</span>
+                            <div class="d-flex align-items-center social_media_get_in_touch">
+                                <a href="#">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.28 0H0.72C0.32175 0 0 0.32175 0 0.72V17.28C0 17.6783 0.32175 18 0.72 18H17.28C17.6783 18 18 17.6783 18 17.28V0.72C18 0.32175 17.6783 0 17.28 0ZM15.201 5.25375H13.7633C12.636 5.25375 12.4178 5.78925 12.4178 6.57675V8.3115H15.1088L14.7578 11.0273H12.4178V18H9.612V11.0295H7.26525V8.3115H9.612V6.309C9.612 3.98475 11.0318 2.718 13.1063 2.718C14.1008 2.718 14.9535 2.79225 15.2033 2.826V5.25375H15.201Z" fill="current" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.942 5.31279C17.9319 4.557 17.7902 3.80874 17.5232 3.10145C17.2917 2.50486 16.938 1.96305 16.4848 1.51064C16.0317 1.05823 15.489 0.705162 14.8914 0.474C14.192 0.21191 13.4532 0.0701931 12.7064 0.0548842C11.7448 0.0119748 11.4399 0 8.999 0C6.55809 0 6.24522 6.6914e-08 5.29065 0.0548842C4.54414 0.0703057 3.80566 0.212021 3.10662 0.474C2.50894 0.705001 1.96615 1.05801 1.51296 1.51044C1.05977 1.96288 0.706175 2.50477 0.474789 3.10145C0.211737 3.79911 0.070092 4.53653 0.0559751 5.28185C0.0129942 6.24282 0 6.54718 0 8.98403C0 11.4209 -7.44727e-09 11.7322 0.0559751 12.6862C0.0709685 13.4326 0.211906 14.1691 0.474789 14.8686C0.706564 15.4651 1.06042 16.0068 1.51376 16.459C1.9671 16.9113 2.50995 17.2641 3.10762 17.4951C3.80474 17.7677 4.54335 17.9196 5.29165 17.9441C6.25422 17.987 6.55909 18 9 18C11.4409 18 11.7538 18 12.7084 17.9441C13.4552 17.9294 14.1941 17.788 14.8934 17.526C15.4908 17.2946 16.0334 16.9414 16.4865 16.489C16.9396 16.0367 17.2934 15.495 17.5252 14.8985C17.7881 14.2 17.929 13.4636 17.944 12.7162C17.987 11.7562 18 11.4518 18 9.01397C17.998 6.57712 17.998 6.26777 17.942 5.31279ZM8.993 13.5923C6.44014 13.5923 4.37206 11.5277 4.37206 8.97905C4.37206 6.43043 6.44014 4.36578 8.993 4.36578C10.2186 4.36578 11.3939 4.85182 12.2605 5.71698C13.1271 6.58213 13.614 7.75553 13.614 8.97905C13.614 10.2026 13.1271 11.376 12.2605 12.2411C11.3939 13.1063 10.2186 13.5923 8.993 13.5923ZM13.7979 5.27087C13.2011 5.27087 12.7203 4.78989 12.7203 4.19514C12.7203 4.05394 12.7482 3.91412 12.8023 3.78367C12.8565 3.65322 12.9358 3.53469 13.0358 3.43484C13.1358 3.335 13.2545 3.2558 13.3852 3.20176C13.5159 3.14773 13.6559 3.11991 13.7974 3.11991C13.9388 3.11991 14.0789 3.14773 14.2095 3.20176C14.3402 3.2558 14.4589 3.335 14.5589 3.43484C14.6589 3.53469 14.7383 3.65322 14.7924 3.78367C14.8465 3.91412 14.8744 4.05394 14.8744 4.19514C14.8744 4.78989 14.3926 5.27087 13.7979 5.27087Z" fill="current" />
+                                        <path d="M8.99286 11.9758C10.6506 11.9758 11.9945 10.6341 11.9945 8.9791C11.9945 7.32408 10.6506 5.98242 8.99286 5.98242C7.33509 5.98242 5.9912 7.32408 5.9912 8.9791C5.9912 10.6341 7.33509 11.9758 8.99286 11.9758Z" fill="current" />
+                                    </svg>
+
+                                </a>
+                                <a href="#">
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 2.13281C20.2123 2.49954 19.3788 2.74115 18.5259 2.85C19.4222 2.28768 20.0963 1.39433 20.4216 0.337507C19.5742 0.868407 18.6487 1.24091 17.6846 1.43907C17.2787 0.983222 16.7904 0.620586 16.2496 0.3732C15.7088 0.125813 15.1266 -0.00115656 14.5386 7.93799e-06C12.1577 7.93799e-06 10.2309 2.03438 10.2309 4.54218C10.2292 4.89101 10.2666 5.2388 10.3421 5.57812C8.6348 5.49236 6.96304 5.02573 5.43374 4.20808C3.90444 3.39043 2.55127 2.23976 1.46081 0.829693C1.07825 1.52068 0.875933 2.30908 0.875 3.1125C0.875 4.68749 1.64194 6.07968 2.8 6.8953C2.11388 6.87785 1.44182 6.68328 0.840875 6.32811V6.38436C0.840875 8.58748 2.32838 10.4203 4.29712 10.8375C3.92691 10.9432 3.5454 10.9968 3.16225 10.9968C2.89038 10.9974 2.61912 10.9691 2.35244 10.9125C2.89975 12.7172 4.49269 14.0297 6.37963 14.0672C4.84635 15.3332 2.9639 16.0175 1.02812 16.0125C0.68452 16.0119 0.341235 15.99 0 15.9468C1.96927 17.2941 4.25838 18.0068 6.59488 18C14.5294 18 18.8641 11.0765 18.8641 5.07187C18.8641 4.87499 18.8593 4.67812 18.8506 4.48593C19.6919 3.84471 20.4198 3.04786 21 2.13281Z" fill="current" />
+                                    </svg>
+
+                                </a>
+                                <a href="#">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.08984 5.84877V18H0.222656V5.84877H4.08984ZM4.33594 2.09673C4.34375 2.69346 4.14648 3.1921 3.74414 3.59264C3.3418 3.99319 2.8125 4.19346 2.15625 4.19346H2.13281C1.49219 4.19346 0.976562 3.99319 0.585938 3.59264C0.195313 3.1921 0 2.69346 0 2.09673C0 1.49183 0.201172 0.991144 0.603516 0.594687C1.00586 0.198229 1.53125 0 2.17969 0C2.82812 0 3.34766 0.198229 3.73828 0.594687C4.12891 0.991144 4.32812 1.49183 4.33594 2.09673ZM18 11.0354V18H14.1445V11.5014C14.1445 10.6431 13.9863 9.97071 13.6699 9.48433C13.3535 8.99796 12.8594 8.75477 12.1875 8.75477C11.6953 8.75477 11.2832 8.89578 10.9512 9.17779C10.6191 9.45981 10.3711 9.80926 10.207 10.2262C10.1211 10.4714 10.0781 10.8025 10.0781 11.2193V18H6.22266C6.23828 14.7384 6.24609 12.094 6.24609 10.0668C6.24609 8.03951 6.24219 6.8297 6.23438 6.43733L6.22266 5.84877H10.0781V7.61444H10.0547C10.2109 7.35286 10.3711 7.12398 10.5352 6.92779C10.6992 6.73161 10.9199 6.51907 11.1973 6.29019C11.4746 6.06131 11.8145 5.88352 12.2168 5.75681C12.6191 5.63011 13.0664 5.56676 13.5586 5.56676C14.8945 5.56676 15.9688 6.03065 16.7812 6.95845C17.5938 7.88624 18 9.24523 18 11.0354Z" fill="current" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----footer----- -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-3 col-12">
+                        <a href="#" class="footer_logo">
+                            <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-2 col-md-3 col-12">
+                        <ul class="footer_link">
+                            <li class="wow fadeInUp" data-wow-delay="0.25s">
+                                <a href="#">Company</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.3s">
+                                <a href="#">Product</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.7s">
+                                <a href="#">Reviews</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="1s">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+                        <ul class="footer_contact_list">
+                            <li class="wow fadeInUp" data-wow-delay="0.25s">
+                                <span>Call us</span>
+                                <a href="#">(816)-582-9023</a>
+                            </li>
+                            <li class="mt-40 wow fadeInUp" data-wow-delay="0.3s">
+                                <span>Email us</span>
+                                <a href="#">layla.stevens@example.com</a>
+                            </li>
+                            <li class="mt-40 wow fadeInUp" data-wow-delay="0.5s">
+                                <span>Email us</span>
+                                <div class="d-flex align-items-center social_media_footer">
+                                    <a href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.28 0H0.72C0.32175 0 0 0.32175 0 0.72V17.28C0 17.6783 0.32175 18 0.72 18H17.28C17.6783 18 18 17.6783 18 17.28V0.72C18 0.32175 17.6783 0 17.28 0ZM15.201 5.25375H13.7633C12.636 5.25375 12.4178 5.78925 12.4178 6.57675V8.3115H15.1088L14.7578 11.0273H12.4178V18H9.612V11.0295H7.26525V8.3115H9.612V6.309C9.612 3.98475 11.0318 2.718 13.1063 2.718C14.1008 2.718 14.9535 2.79225 15.2033 2.826V5.25375H15.201Z" fill="current" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.942 5.31279C17.9319 4.557 17.7902 3.80874 17.5232 3.10145C17.2917 2.50486 16.938 1.96305 16.4848 1.51064C16.0317 1.05823 15.489 0.705162 14.8914 0.474C14.192 0.21191 13.4532 0.0701931 12.7064 0.0548842C11.7448 0.0119748 11.4399 0 8.999 0C6.55809 0 6.24522 6.6914e-08 5.29065 0.0548842C4.54414 0.0703057 3.80566 0.212021 3.10662 0.474C2.50894 0.705001 1.96615 1.05801 1.51296 1.51044C1.05977 1.96288 0.706175 2.50477 0.474789 3.10145C0.211737 3.79911 0.070092 4.53653 0.0559751 5.28185C0.0129942 6.24282 0 6.54718 0 8.98403C0 11.4209 -7.44727e-09 11.7322 0.0559751 12.6862C0.0709685 13.4326 0.211906 14.1691 0.474789 14.8686C0.706564 15.4651 1.06042 16.0068 1.51376 16.459C1.9671 16.9113 2.50995 17.2641 3.10762 17.4951C3.80474 17.7677 4.54335 17.9196 5.29165 17.9441C6.25422 17.987 6.55909 18 9 18C11.4409 18 11.7538 18 12.7084 17.9441C13.4552 17.9294 14.1941 17.788 14.8934 17.526C15.4908 17.2946 16.0334 16.9414 16.4865 16.489C16.9396 16.0367 17.2934 15.495 17.5252 14.8985C17.7881 14.2 17.929 13.4636 17.944 12.7162C17.987 11.7562 18 11.4518 18 9.01397C17.998 6.57712 17.998 6.26777 17.942 5.31279ZM8.993 13.5923C6.44014 13.5923 4.37206 11.5277 4.37206 8.97905C4.37206 6.43043 6.44014 4.36578 8.993 4.36578C10.2186 4.36578 11.3939 4.85182 12.2605 5.71698C13.1271 6.58213 13.614 7.75553 13.614 8.97905C13.614 10.2026 13.1271 11.376 12.2605 12.2411C11.3939 13.1063 10.2186 13.5923 8.993 13.5923ZM13.7979 5.27087C13.2011 5.27087 12.7203 4.78989 12.7203 4.19514C12.7203 4.05394 12.7482 3.91412 12.8023 3.78367C12.8565 3.65322 12.9358 3.53469 13.0358 3.43484C13.1358 3.335 13.2545 3.2558 13.3852 3.20176C13.5159 3.14773 13.6559 3.11991 13.7974 3.11991C13.9388 3.11991 14.0789 3.14773 14.2095 3.20176C14.3402 3.2558 14.4589 3.335 14.5589 3.43484C14.6589 3.53469 14.7383 3.65322 14.7924 3.78367C14.8465 3.91412 14.8744 4.05394 14.8744 4.19514C14.8744 4.78989 14.3926 5.27087 13.7979 5.27087Z" fill="current" />
+                                            <path d="M8.99286 11.9758C10.6506 11.9758 11.9945 10.6341 11.9945 8.9791C11.9945 7.32408 10.6506 5.98242 8.99286 5.98242C7.33509 5.98242 5.9912 7.32408 5.9912 8.9791C5.9912 10.6341 7.33509 11.9758 8.99286 11.9758Z" fill="current" />
+                                        </svg>
+
+                                    </a>
+                                    <a href="#">
+                                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 2.13281C20.2123 2.49954 19.3788 2.74115 18.5259 2.85C19.4222 2.28768 20.0963 1.39433 20.4216 0.337507C19.5742 0.868407 18.6487 1.24091 17.6846 1.43907C17.2787 0.983222 16.7904 0.620586 16.2496 0.3732C15.7088 0.125813 15.1266 -0.00115656 14.5386 7.93799e-06C12.1577 7.93799e-06 10.2309 2.03438 10.2309 4.54218C10.2292 4.89101 10.2666 5.2388 10.3421 5.57812C8.6348 5.49236 6.96304 5.02573 5.43374 4.20808C3.90444 3.39043 2.55127 2.23976 1.46081 0.829693C1.07825 1.52068 0.875933 2.30908 0.875 3.1125C0.875 4.68749 1.64194 6.07968 2.8 6.8953C2.11388 6.87785 1.44182 6.68328 0.840875 6.32811V6.38436C0.840875 8.58748 2.32838 10.4203 4.29712 10.8375C3.92691 10.9432 3.5454 10.9968 3.16225 10.9968C2.89038 10.9974 2.61912 10.9691 2.35244 10.9125C2.89975 12.7172 4.49269 14.0297 6.37963 14.0672C4.84635 15.3332 2.9639 16.0175 1.02812 16.0125C0.68452 16.0119 0.341235 15.99 0 15.9468C1.96927 17.2941 4.25838 18.0068 6.59488 18C14.5294 18 18.8641 11.0765 18.8641 5.07187C18.8641 4.87499 18.8593 4.67812 18.8506 4.48593C19.6919 3.84471 20.4198 3.04786 21 2.13281Z" fill="current" />
+                                        </svg>
+
+                                    </a>
+                                    <a href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.08984 5.84877V18H0.222656V5.84877H4.08984ZM4.33594 2.09673C4.34375 2.69346 4.14648 3.1921 3.74414 3.59264C3.3418 3.99319 2.8125 4.19346 2.15625 4.19346H2.13281C1.49219 4.19346 0.976562 3.99319 0.585938 3.59264C0.195313 3.1921 0 2.69346 0 2.09673C0 1.49183 0.201172 0.991144 0.603516 0.594687C1.00586 0.198229 1.53125 0 2.17969 0C2.82812 0 3.34766 0.198229 3.73828 0.594687C4.12891 0.991144 4.32812 1.49183 4.33594 2.09673ZM18 11.0354V18H14.1445V11.5014C14.1445 10.6431 13.9863 9.97071 13.6699 9.48433C13.3535 8.99796 12.8594 8.75477 12.1875 8.75477C11.6953 8.75477 11.2832 8.89578 10.9512 9.17779C10.6191 9.45981 10.3711 9.80926 10.207 10.2262C10.1211 10.4714 10.0781 10.8025 10.0781 11.2193V18H6.22266C6.23828 14.7384 6.24609 12.094 6.24609 10.0668C6.24609 8.03951 6.24219 6.8297 6.23438 6.43733L6.22266 5.84877H10.0781V7.61444H10.0547C10.2109 7.35286 10.3711 7.12398 10.5352 6.92779C10.6992 6.73161 10.9199 6.51907 11.1973 6.29019C11.4746 6.06131 11.8145 5.88352 12.2168 5.75681C12.6191 5.63011 13.0664 5.56676 13.5586 5.56676C14.8945 5.56676 15.9688 6.03065 16.7812 6.95845C17.5938 7.88624 18 9.24523 18 11.0354Z" fill="current" />
+                                        </svg>
+
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-7 col-xl-5 col-lg-5 col-md-6 col-12">
+                        <div class="footer_getInTouch">
+                            <h4 class="wow fadeInUp" data-wow-delay="0.25s">Get in touch</h4>
+                            <span class="wow fadeInUp" data-wow-delay="0.5s">from bean to cup</span>
+                            <div class="footer_input d-flex align-items-center wow fadeInUp" data-wow-delay="0.9s">
+                                <input type="text" class="form-control" placeholder="Enter your e-mail address">
+                                <a href="#" class="common_btn light-bg" role="button">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- -----------JAVASCRIPT FILE------------ -->
+
+    <!-- ------JQUERY----------- -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- ------------------- -->
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <!-- -------POPPER JS------ -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- ---------BOOTSTRAP JS----------- -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- -------FONT AWESOME ICONS------- -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- -----slick JS------ -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- ----------CUSTOM JS------------- -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: THICCCBOI-regular;
+  src: url(../fonts/THICCCBOI-Regular.ttf); }
+
+@font-face {
+  font-family: THICCCBOI-black;
+  src: url(../fonts/THICCCBOI-Black.ttf); }
+
+@font-face {
+  font-family: THICCCBOI-bold;
+  src: url(../fonts/THICCCBOI-Bold.ttf); }
+
+@font-face {
+  font-family: THICCCBOI-extrabold;
+  src: url(../fonts/THICCCBOI-ExtraBold.ttf); }
+
+@font-face {
+  font-family: THICCCBOI-semibold;
+  src: url(../fonts/THICCCBOI-SemiBold.ttf); }
+
+@font-face {
+  font-family: THICCCBOI-light;
+  src: url(../fonts/THICCCBOI-Light.ttf); }
+
+@font-face {
+  font-family: THICCCBOI-medium;
+  src: url(../fonts/THICCCBOI-Medium.ttf); }
+
+body {
+  font-size: 17px;
+  font-family: THICCCBOI-medium;
+  color: #343f52; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.header .navbar {
+  background-color: #fff8ef;
+  height: 82px; }
+  .header .navbar .navbar-nav li:not(:last-child) {
+    margin-right: 15px; }
+  .header .navbar .navbar-nav li a {
+    color: #343f52;
+    font-weight: 700;
+    letter-spacing: normal;
+    transition: all 0.2s ease-in-out; }
+    .header .navbar .navbar-nav li a:hover {
+      color: #fab758; }
+  .header .navbar div ul li a.dropdown-toggle {
+    text-transform: uppercase;
+    color: #343f52;
+    font-weight: 700; }
+    .header .navbar div ul li a.dropdown-toggle::after {
+      color: #fab758; }
+  .header .navbar div ul li .dropdown-menu {
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+    min-width: 4rem;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; }
+    .header .navbar div ul li .dropdown-menu li a {
+      color: #343f52;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.2rem 1.5rem;
+      transition: all 0.2s ease-in-out; }
+      .header .navbar div ul li .dropdown-menu li a:hover {
+        color: #fab758;
+        background-color: #fff; }
+  .header .navbar div ul li i {
+    font-size: 22px;
+    color: #343f52;
+    margin-left: 0.8rem;
+    transition: all 0.5s;
+    cursor: pointer; }
+    .header .navbar div ul li i:hover {
+      color: #fab758; }
+  .header .navbar .navbar-toggler {
+    width: 24px;
+    height: 22px;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 0.8rem; }
+    .header .navbar .navbar-toggler .navbar-toggler-icon {
+      display: block;
+      width: 24px;
+      height: 3px;
+      transition: all 0.2s ease-in-out;
+      background: #60697b;
+      position: relative; }
+      .header .navbar .navbar-toggler .navbar-toggler-icon::before, .header .navbar .navbar-toggler .navbar-toggler-icon::after {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 3px;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        background: #60697b; }
+      .header .navbar .navbar-toggler .navbar-toggler-icon::before {
+        top: 7px; }
+      .header .navbar .navbar-toggler .navbar-toggler-icon::after {
+        bottom: 7px; }
+    .header .navbar .navbar-toggler:focus {
+      box-shadow: none; }
+
+.header .offcanvas-header {
+  display: none; }
+
+.offcanvas-active .navbar-toggler-icon {
+  background: transparent !important; }
+  .offcanvas-active .navbar-toggler-icon::before {
+    transform: translateY(0px) rotate(-45deg);
+    top: 0 !important; }
+  .offcanvas-active .navbar-toggler-icon:after {
+    transform: translateY(0px) rotate(45deg);
+    bottom: 0 !important; }
+
+@media (max-width: 992px) {
+  .offcanvas-header {
+    display: block !important; }
+    .offcanvas-header .btn-close {
+      background: none;
+      opacity: 1;
+      color: #fff;
+      font-size: 32px;
+      padding: 0;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #1e2228;
+    transition: all 0.5s ease-in; }
+    .navbar-collapse ul li a {
+      color: #fff !important; }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(0rem); }
+  .offcanvas-logo {
+    padding: 3rem 0 2rem; } }

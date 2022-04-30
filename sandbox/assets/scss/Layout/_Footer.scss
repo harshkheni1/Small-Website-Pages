@@ -1,0 +1,115 @@
+.Footer {
+  padding: 140px 0px 100px;
+  position: relative;
+  margin-top: 160px;
+  &.bg-navy {
+    background-color: #343f52;
+  }
+  &:after {
+    border-right-width: 100vw !important;
+    border-bottom-width: 4rem !important;
+    top: 0;
+    border-right-color: $cream !important;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    border: 0 solid transparent;
+  }
+  .TryForFree {
+    h3 {
+      font-size: 38px;
+      line-height: 1.25;
+      letter-spacing: 0.8px;
+    }
+  }
+  hr {
+    margin: 60px 0px 70px;
+    color: rgba(164, 174, 198, 0.2);
+    opacity: 1;
+  }
+  .WidgetBlock {
+    p {
+      color: #cacaca;
+    }
+    .social {
+      a {
+        color: $white;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+        &:not(:last-child) {
+          margin-right: 14px;
+        }
+        &:hover {
+          transform: translateY(-0.15rem);
+        }
+      }
+    }
+    .Widget {
+      &_Title {
+        font-size: 20px;
+        margin-bottom: 15px !important;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+      address {
+        color: #cacaca;
+        line-height: inherit;
+      }
+      .Mail_Ttl {
+        color: $white;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: $yellow;
+        }
+      }
+      ul {
+        li {
+          a {
+            color: $white;
+            &:hover {
+              color: $yellow;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+          &:not(:first-child) {
+            margin-top: 7px;
+          }
+        }
+      }
+      .form-floating.join-input {
+        .form-control {
+          height: 52px;
+          background: rgba(255, 255, 255, 0.03);
+          border-color: rgba(255, 255, 255, 0.1);
+          color: #cacaca !important;
+          border-top-right-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+          border-radius: 0.4rem;
+          // padding: 0.6rem 1rem !important;
+          font-size: 15px;
+          &:focus {
+            border-color: rgba(250, 183, 88, 0.5);
+            box-shadow: none;
+          }
+        }
+        label {
+          color: $gray;
+          padding: 0.75rem 0.75rem;
+        }
+        .btn-join {
+          background-color: $yellow;
+          border-top-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+          color: $white;
+          border-radius: 0.4rem;
+          padding: 0.5rem 1.2rem;
+          font-weight: 600;
+          letter-spacing: 0.7px;
+        }
+      }
+    }
+  }
+}

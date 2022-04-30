@@ -1,0 +1,180 @@
+/** @format */
+
+$black: #333333;
+$blue: #0a72d6;
+$white: #fff;
+$gray: #666666;
+
+// ------------
+@mixin button-common($font-color, $bg-color) {
+  background-color: $bg-color;
+  color: $font-color;
+  // font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Proxima Nova";
+  height: 48px;
+  width: 170px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $black;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 0;
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    transition: all 0.45s;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+  }
+  &:hover {
+    &:before {
+      height: 400%;
+    }
+  }
+}
+@mixin button-common-border($font-color, $border-color) {
+  color: $font-color;
+  border: 1px solid $border-color;
+  font-family: "Proxima Nova";
+  border-radius: 8px;
+  width: 170px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+  &:before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+  }
+  &:after {
+    right: -20px;
+    transform: translate(50%, -50%);
+  }
+  &:hover {
+    &:before {
+      -webkit-animation: criss-cross-left 0.8s both;
+      animation: criss-cross-left 0.8s both;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+    }
+
+    &:after {
+      -webkit-animation: criss-cross-right 0.8s both;
+      animation: criss-cross-right 0.8s both;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+    }
+    span {
+      color: $white;
+      position: relative;
+      z-index: 9;
+    }
+  }
+}
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+// -----------
+span.small_ttl {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $blue;
+  font-family: "Proxima Nova";
+  display: block;
+  margin-bottom: 18px;
+}
+h2.main_ttl {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: $black;
+  font-family: "Proxima Nova";
+  position: relative;
+  z-index: 99;
+}

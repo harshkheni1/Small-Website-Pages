@@ -1,0 +1,21 @@
+.Services_Wrapper {
+  .Services_Wrapper_Image {
+    margin-top: -11rem;
+    position: relative;
+    z-index: 1;
+    img {
+      border-radius: 0.4rem;
+      width: 100%;
+    }
+  }
+  .Services_Counter {
+    padding: 50px;
+    margin-top: -85px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.4rem;
+    &::before {
+      content: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.Bg-Yellow {
+  background-color: $yellow-bg;
+  padding: 180px 0px 250px;
+  .Banner_wrapper_Content {
+    padding: 0;
+    .breadcrumb {
+      .breadcrumb-item {
+        font-weight: 700;
+        color: $gray;
+        a {
+          font-weight: 700;
+          color: $gray;
+        }
+        + .breadcrumb-item:before {
+          content: "\f0da";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}

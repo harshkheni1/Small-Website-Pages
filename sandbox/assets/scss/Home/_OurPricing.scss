@@ -1,0 +1,260 @@
+.Our_Pricing {
+  padding-top: 90px;
+  .text-yellow {
+    color: $yellow;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $yellow;
+      top: 100%;
+      transform-origin: 100% 50%;
+      transform: scale3d(0, 1, 1);
+      transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    }
+    &:hover::before {
+      transform-origin: 0 50%;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  &.ServiceBlock_Pricing {
+    padding-top: 120px;
+    .plan {
+      box-shadow: 0 0 0 0.05rem rgba(8, 60, 130, 0.06),
+        0 0 1.25rem rgba(30, 34, 40, 0.04) !important;
+      .plan__features {
+        li {
+          display: flex;
+          i {
+            height: 20px;
+            width: 20px;
+            background-color: $yellow-IconBg;
+            border-radius: 100%;
+            font-size: 18px !important;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.redIcon {
+              background-color: #fae3e4 !important;
+              color: #e2626b !important;
+            }
+          }
+        }
+      }
+    }
+    .bg_dot_yellow {
+      background-image: radial-gradient($yellow 2px, transparent 2.5px);
+      bottom: -0.5rem;
+      right: -1.6rem;
+      transform: translate3d(0px, 27px, 0px);
+      position: absolute;
+      background-size: 0.75rem 0.75rem;
+      opacity: 0.4;
+      width: 120px;
+      height: 160px;
+    }
+    .shape_rounded_red {
+      background: repeating-linear-gradient(
+        -55deg,
+        rgba(255, 255, 255, 0) 0.8px,
+        #e2626b 1.6px,
+        #e2626b 3px,
+        rgba(255, 255, 255, 0) 3.8px,
+        rgba(255, 255, 255, 0) 10px
+      );
+      top: -1rem;
+      left: -2rem;
+      transform: translate3d(0px, -13px, 0px);
+      position: absolute;
+      opacity: 0.4;
+      border-radius: 50%;
+      height: 160px;
+      width: 160px;
+    }
+  }
+}
+
+.pricing-tables.plans--annually
+  .plans
+  .plan
+  .plan__price
+  .price.price--monthly {
+  opacity: 0;
+  transform: translateY(100px);
+}
+.pricing-tables.plans--annually
+  .plans
+  .plan
+  .plan__price
+  .price.price--annually {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+.pricing-tables {
+  .switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    -webkit-user-select: none;
+    user-select: none;
+    span {
+      font-size: 17px;
+      color: $gray;
+
+      transition: all 0.3s ease-in-out;
+      &.annually {
+        position: relative;
+        .save {
+          color: $red;
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+    }
+    .custom-switch {
+      position: relative;
+      display: inline-block;
+      margin: 0 1rem;
+      input {
+        display: none;
+        &:checked + label:active:after {
+          left: 25px;
+        }
+        &:checked + label:after {
+          left: 22px;
+          background: $yellow;
+        }
+      }
+      label {
+        position: relative;
+        display: block;
+        width: 48px;
+        height: 28px;
+        border-radius: 50px;
+        background: rgba(30, 34, 40, 0.07);
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        &:after {
+          position: relative;
+          display: block;
+          content: "";
+          width: 20px;
+          height: 20px;
+          top: 4px;
+          left: 5px;
+          border-radius: 19px;
+          background: $yellow;
+          pointer-events: none;
+          transition: all 0.4s ease-in-out;
+        }
+        &:active:after {
+          width: 36px;
+        }
+      }
+    }
+  }
+  .plans {
+    min-height: 0;
+    margin-top: 3.6rem;
+    .plan {
+      box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07);
+      border-radius: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 0px 70px;
+      background-color: $white;
+      position: relative;
+      z-index: 1;
+      .plan__head {
+        transition: all 0.4s ease-in-out;
+        padding-bottom: 2rem;
+
+        position: relative;
+        z-index: 1;
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: #0e090b;
+          background: linear-gradient(-45deg, #eeaeca 0%, #94bbe9 100%);
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          z-index: -1;
+          transition: all 0.4s ease-in-out;
+        }
+        .plan__title {
+          margin: 0.5rem 0 1.75rem 0;
+          font-size: 20px;
+        }
+        .plan__price {
+          .price {
+            display: flex;
+            .plan__type {
+              font-size: 16px;
+              font-weight: 500;
+              color: $gray;
+              align-self: end;
+            }
+            &.price--annually {
+              transition: transform 0.4s ease 0s, opacity 1s ease 0s;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              opacity: 0;
+              transform: translateY(100px);
+            }
+            .price__currency {
+              font-size: 20px;
+            }
+            .price__value {
+              font-size: 60px;
+              line-height: 60px;
+            }
+          }
+        }
+      }
+      .plan__features {
+        padding: 0px 0 45px;
+
+        li {
+          span {
+            color: $gray;
+          }
+          i {
+            font-size: 21px;
+            color: $yellow;
+          }
+          &:not(:first-child) {
+            margin-top: 0.35rem;
+          }
+        }
+      }
+      .plan__btn--start {
+        margin: auto;
+        width: 75%;
+      }
+    }
+    .bg_dot_red {
+      background-image: radial-gradient(#e2626b 2px, transparent 2.5px);
+      bottom: -0.5rem;
+      right: -1.6rem;
+      transform: translate3d(0px, 14px, 0px);
+      position: absolute;
+      background-size: 0.75rem 0.75rem;
+      width: 120px;
+      height: 160px;
+      opacity: 0.4;
+      z-index: -1;
+    }
+  }
+}

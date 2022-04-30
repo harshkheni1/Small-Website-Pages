@@ -1,0 +1,55 @@
+.WhyChooseUs {
+  .WhyChooseUs_Content {
+    padding: 0 35px;
+    .main_ttl {
+      margin-bottom: 35px !important;
+    }
+    .accordion-wrapper {
+      .card {
+        border: none;
+        .card-header {
+          border: none;
+          background-color: transparent;
+          padding: 0 0 0.8rem 0;
+          .accordion-button {
+            box-shadow: none;
+            background: none;
+            font-size: 18px;
+            color: $black;
+            font-weight: 700;
+            padding: 0 0 0 24px;
+
+            &::after {
+              background-image: none;
+              content: none;
+            }
+            &::before {
+              font-family: "Font Awesome 5 Free";
+              content: "\f0de";
+              font-weight: 900;
+              left: 0;
+              font-size: 15px;
+              position: absolute;
+              color: $yellow;
+              top: 50%;
+              transform: translateY(-50%);
+              line-height: 1;
+              margin-top: 0px;
+            }
+            &.collapsed {
+              &::before {
+                content: "\f0d7";
+              }
+            }
+          }
+        }
+        .card-body {
+          padding: 0 0 0 24px;
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

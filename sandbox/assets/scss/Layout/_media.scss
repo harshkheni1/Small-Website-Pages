@@ -1,0 +1,267 @@
+@media (max-width: 1200px) {
+  .OurStrategy_Card.ml-85 {
+    margin-left: 0 !important;
+  }
+  .OurStrategy_Card:nth-child(odd) {
+    margin-right: 0px !important;
+  }
+  .Services_Counter {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .mt--160 {
+    margin-top: -110px;
+  }
+}
+@media (max-width: 991px) {
+  .Project_Banner .Project_Banner_Content h1 {
+    font-size: 42px;
+  }
+  .HowWedoIt .line [class*="col-"] {
+    margin-top: 30px;
+    &:not(:last-child):after {
+      content: none;
+    }
+  }
+  .mt--160 {
+    margin-top: 0px;
+  }
+  .Client_Counter {
+    margin-bottom: 20px;
+  }
+  .whatWeDo_Image {
+    margin-bottom: 50px;
+  }
+  .Services_Wrapper .Services_Counter {
+    margin-top: -5px !important;
+  }
+  .offcanvas-header {
+    display: block !important;
+    .btn-close {
+      background: none;
+      opacity: 1;
+      color: $white;
+      font-size: 32px;
+      padding: 0;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .WhyChooseUs_Content,
+  .Our_Community_Content {
+    padding: 0 !important;
+  }
+  .ContactUs .ContactUsBlock .AddressList {
+    padding: 50px;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 300px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #1e2228;
+    transition: all 0.5s ease-in;
+    ul {
+      li {
+        a {
+          color: $white !important;
+        }
+      }
+    }
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(0rem);
+  }
+  .offcanvas-logo {
+    padding: 3rem 0 2rem;
+  }
+  .Banner_content {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 !important;
+    h1 {
+      font-size: 42px !important;
+    }
+    .btn-warning {
+      margin: 0px auto;
+    }
+  }
+  .main_ttl {
+    font-size: 32px;
+  }
+
+  .WhyChooseUs .row > div:last-child {
+    margin-top: 50px;
+  }
+  .OurSolution .row .small_ttl {
+    margin-top: 50px;
+  }
+  .OurSolution .row > div ul {
+    margin-top: 1rem !important;
+  }
+  .Our_Community .row .small_ttl {
+    margin-top: 50px;
+  }
+  .Our_Community_Block {
+    margin-bottom: 30px;
+  }
+  .Our_Community .mt-25 {
+    margin-top: 0;
+  }
+  .Lets_Talk .small_ttl {
+    margin-top: 50px;
+  }
+  .Brands img {
+    margin-bottom: 35px;
+    padding: 0 !important;
+  }
+  .Footer .btn-warning {
+    margin: 15px 0 0 !important;
+  }
+  .WidgetBlock .row > :last-child {
+    margin-top: 30px;
+  }
+  .Footer .TryForFree h3 {
+    font-size: 32px;
+  }
+  .Banner_wrapper_Content {
+    padding-top: 30px !important;
+  }
+  .OvelapImage {
+    margin-bottom: 150px;
+  }
+  .Convinced_Image {
+    margin-bottom: 50px;
+  }
+  .Steps {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .plan {
+    margin-bottom: 30px;
+  }
+  .Banner_content {
+    h1 {
+      font-size: 36px !important;
+    }
+  }
+  .WidgetBlock .row > div {
+    margin-top: 30px;
+  }
+  .whatWeDo .Bg_Dot {
+    left: 0;
+    top: 1rem;
+  }
+  .whatWeDo .Rounded_Circle {
+    right: -20px;
+  }
+  .Footer .TryForFree h3 {
+    font-size: 28px;
+  }
+  .Lets_Talk .gx-5 {
+    --bs-gutter-x: inherit !important;
+  }
+}
+@media (max-width: 767px) {
+  .ProjectDetails_OuterBlock .ProjectTiles .Project:not(:first-child) {
+    margin-top: 40px;
+  }
+  .Project .row [class*="col"] {
+    margin-top: 0px !important;
+  }
+  .whatWeDo_Image {
+    img {
+      width: 100% !important;
+    }
+  }
+  .Hover--Scale {
+    margin-bottom: 30px;
+  }
+  .Services_LetsTalk_Image {
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .px-35 {
+    margin-top: 30px;
+  }
+  .OvelapImage {
+    margin-bottom: 70px !important;
+    display: inherit !important;
+    .Item {
+      &:first-child {
+        width: inherit !important;
+        margin-bottom: 30px !important;
+        margin-top: inherit !important;
+      }
+      &:nth-child(2) {
+        width: inherit !important;
+        margin-left: inherit !important;
+      }
+    }
+    margin-bottom: 70px !important;
+  }
+
+  .Basic_Slider {
+    padding: 120px 0px 90px;
+    .Basic_Slider_Image,
+    .RoundedCircle {
+      display: none;
+    }
+  }
+  .OurTeam .Circle-Blue,
+  .OurTeam .Bg-Line,
+  .shape_rounded_red {
+    display: none;
+  }
+  .Our_Pricing.ServiceBlock_Pricing .bg_dot_yellow {
+    right: 0;
+  }
+  .Services_LetsTalk .Shape_Rectangle {
+    left: 0;
+  }
+  .HowItWorks {
+    .gx-5 {
+      --bs-gutter-x: 1.5rem !important;
+    }
+  }
+  .Clients {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .whatWeDo {
+    .Rounded_Circle,
+    .Bg_Dot {
+      display: none;
+    }
+  }
+  .Banner_wrapper_Content h1 {
+    font-size: 36px !important;
+  }
+  .Convinced .Doted_Circle {
+    left: 0 !important;
+  }
+  .Wrapper_Ttl {
+    font-size: 28px !important;
+  }
+  .ContactUs .ContactUsBlock .AddressList {
+    padding: 20px;
+  }
+}

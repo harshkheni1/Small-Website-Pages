@@ -1,0 +1,37 @@
+.Services_LetsTalk {
+  margin-top: 160px;
+  .Shape_Rectangle {
+    width: 160px;
+    height: 160px;
+    background-image: radial-gradient($yellow 2px, transparent 2.5px);
+    top: 0px;
+    left: -1.4rem;
+    z-index: 0;
+    transform: translate3d(0px, 8px, 0px);
+    position: absolute;
+    background-size: 0.75rem 0.75rem;
+    opacity: 0.4;
+  }
+  .Services_LetsTalk_Image {
+    position: relative;
+    z-index: 1;
+    img {
+      border-radius: 0.4rem;
+    }
+  }
+  .BgLightYellow {
+    background-color: $yellow-IconBg;
+    border-radius: 0.4rem;
+    padding: 60px 40px;
+    text-align: center;
+    h3 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .px-35 {
+    padding: 0px 35px;
+  }
+}

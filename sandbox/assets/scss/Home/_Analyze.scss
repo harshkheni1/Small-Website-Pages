@@ -1,0 +1,61 @@
+.Analyze {
+  padding: 160px 0px;
+  background: linear-gradient(
+    0deg,
+    #fff8ef,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  p {
+    margin: 25px 0px 35px;
+  }
+  .form-floating {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    .form-control {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      position: relative;
+      flex: 1 1 auto;
+      width: 1%;
+      min-width: 0;
+      padding: 20px 20px 4px;
+      height: 52px;
+      line-height: 1.25;
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid rgba(8, 60, 130, 0.06);
+      background-color: $white;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:focus {
+        border-color: #fddbac;
+      }
+    }
+    label {
+      color: #959ca9;
+      font-size: 16px;
+      padding: 0.9rem 1.2rem;
+    }
+    .btn-mail {
+      background-color: $yellow;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      margin-left: -1px;
+      border-radius: 0.4rem;
+      padding: 0.5rem 1.2rem;
+      font-weight: 700;
+      color: $white;
+      font-size: 16px;
+      transition: all 0.2s ease-in-out;
+      letter-spacing: 1.5px;
+      &:hover {
+        box-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
+      }
+    }
+  }
+}

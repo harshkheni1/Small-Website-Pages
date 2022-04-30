@@ -1,0 +1,30 @@
+.DropUs {
+  .ContactForm {
+    margin-top: 50px;
+    .form-control,
+    .form-select {
+      background-color: $white;
+      height: 52px;
+      border: 1px solid rgba(8, 60, 130, 0.06);
+      box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+      border-radius: 0.4rem;
+      padding-left: 1rem !important;
+      &:focus {
+        border-color: $yellow;
+      }
+    }
+    .form-select {
+      color: $text-gray;
+    }
+    .form-floating {
+      label {
+        color: #959ca9;
+        font-size: 16px;
+        padding: 0.8rem 1rem;
+      }
+    }
+    .text-muted {
+      color: $text-gray !important;
+    }
+  }
+}

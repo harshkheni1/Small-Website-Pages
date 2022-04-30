@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: THICCCBOI-regular;
+  src: url(../fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: THICCCBOI-black;
+  src: url(../fonts/THICCCBOI-Black.ttf);
+}
+@font-face {
+  font-family: THICCCBOI-bold;
+  src: url(../fonts/THICCCBOI-Bold.ttf);
+}
+@font-face {
+  font-family: THICCCBOI-extrabold;
+  src: url(../fonts/THICCCBOI-ExtraBold.ttf);
+}
+@font-face {
+  font-family: THICCCBOI-semibold;
+  src: url(../fonts/THICCCBOI-SemiBold.ttf);
+}
+@font-face {
+  font-family: THICCCBOI-light;
+  src: url(../fonts/THICCCBOI-Light.ttf);
+}
+@font-face {
+  font-family: THICCCBOI-medium;
+  src: url(../fonts/THICCCBOI-Medium.ttf);
+}
+body {
+  font-size: 17px;
+  font-family: THICCCBOI-medium;
+  color: $black;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+p {
+  color: $gray;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+::selection {
+  background: #fbcb87;
+  color: $white;
+}
+// ------
+.btn-warning {
+  display: block;
+  font-size: 17px;
+  color: $white;
+  background-color: $yellow;
+  color: $white;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  font-weight: 900;
+  padding: 10px 24px;
+  border-radius: 50rem !important;
+  width: fit-content;
+  transform: translateY(0);
+  line-height: 1.7;
+  font-family: THICCCBOI-light;
+  letter-spacing: 0.9px;
+  &:hover {
+    transform: translateY(-0.15rem);
+    background-color: $yellow;
+    color: $white;
+    box-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
+  }
+}
+// ----title----
+.small_ttl {
+  letter-spacing: 0.02rem;
+  color: $gray;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.main_ttl {
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+// ---------------
+.Ttl_Icon {
+  svg {
+    height: 52px;
+    width: 52px;
+    margin-bottom: 20px;
+    .svg-stroke {
+      fill: #36496d;
+    }
+    .svg-fill {
+      fill: $light-yellow;
+    }
+  }
+}
+.Wrapper_Ttl {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+p.lead {
+  font-size: 21px;
+}
+svg {
+  .svg-stroke {
+    fill: #36496d;
+  }
+  .svg-fill {
+    fill: $light-yellow;
+  }
+}

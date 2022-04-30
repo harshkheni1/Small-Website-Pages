@@ -1,0 +1,76 @@
+.Basic_Slider {
+  padding-top: 120px;
+  background-color: $yellow-bg;
+  position: relative;
+
+  &::after {
+    border-right-color: $cream !important;
+    border-right-width: 100vw !important;
+    border-bottom-width: 4rem !important;
+    top: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    border: 0 solid transparent;
+  }
+  .RoundedCircle {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    top: 9rem;
+    left: 2.2rem;
+    transform: translate3d(0px, 17px, 0px);
+    position: absolute;
+    background-color: #ffe8c6;
+  }
+  .Slider {
+    .item {
+      .Item_Wrapper {
+        position: relative;
+        p {
+          margin-bottom: 20px;
+        }
+        .Blockquote-Details {
+          h5 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .IconQuotes {
+          i {
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            font-size: 60px;
+            color: rgba(52, 63, 82, 0.05);
+          }
+        }
+      }
+    }
+  }
+}
+.owl-dots {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  .owl-dot {
+    span {
+      background-color: $gray-primary;
+      height: 6px !important;
+      width: 6px !important;
+      opacity: 0.5 !important;
+    }
+    &.active {
+      span {
+        background-color: transparent !important;
+        border: 3px solid $gray-primary;
+        height: 10px !important;
+        width: 10px !important;
+      }
+    }
+  }
+}

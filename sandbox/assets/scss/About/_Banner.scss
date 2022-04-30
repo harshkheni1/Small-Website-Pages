@@ -1,0 +1,32 @@
+.Banner_wrapper {
+  position: relative;
+  padding-top: 120px;
+  &.Bg-Gray {
+    background-color: $light-gray;
+  }
+  &_Content {
+    padding-top: 171px;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      word-spacing: 0.5rem;
+    }
+    p {
+      font-size: 21px;
+    }
+  }
+  &::before {
+    border-right-width: 100vw !important;
+    border-top-width: 4rem !important;
+    bottom: 0rem;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    border: 0 solid transparent;
+    border-right-color: $cream;
+  }
+}

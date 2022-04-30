@@ -1,0 +1,20 @@
+.ContactUs {
+  margin-top: -180px;
+  position: relative;
+  z-index: 99;
+  margin-bottom: 120px;
+  .ContactUsBlock {
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07);
+    border-radius: 0.4rem;
+    background-color: $white;
+    overflow: hidden;
+    .map {
+      align-self: stretch;
+      height: 100%;
+      min-height: 18rem;
+    }
+    .AddressList {
+      padding: 90px;
+    }
+  }
+}

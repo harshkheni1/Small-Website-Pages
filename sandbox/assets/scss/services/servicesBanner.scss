@@ -1,0 +1,19 @@
+.underline {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  &:after {
+    content: "";
+    display: block;
+    background: #f1dabb;
+    border-radius: 5rem;
+    position: absolute;
+    width: calc(100% + 2.5%);
+    height: 30%;
+    left: -1.5%;
+    bottom: 9%;
+    z-index: -1;
+    margin-top: 0;
+    transition: all 0.2s ease-in-out;
+  }
+}

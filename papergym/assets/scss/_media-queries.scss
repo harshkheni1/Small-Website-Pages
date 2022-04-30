@@ -1,0 +1,501 @@
+@media (max-width: 1700px) {
+  .invite-people .input-text input {
+    width: 480px;
+  }
+}
+@media (max-width: 1600px) {
+  .invite-people span {
+    font-size: 22px;
+  }
+  .invite-people {
+    padding: 16px 15px;
+  }
+}
+@media (max-width: 1650px) {
+  .banner_content h1 {
+    font-size: 56px !important;
+  }
+  .video-sec_content h2 {
+    font-size: 30px !important;
+    line-height: 45px !important;
+  }
+  .featured-channels_list .accordion-item .accordion-body ul li {
+    padding: 10px 25px 10px 25px !important;
+  }
+  .featured-channels_left_block .sign_up h4 {
+    font-size: 20px;
+  }
+  .common-page-ttl h2 {
+    font-size: 56px;
+    line-height: 76px;
+  }
+  .invite-frnd-link,
+  .session-btn-block {
+    margin-top: 30px !important;
+  }
+}
+@media (max-width: 1500px) {
+  .video-btn-slider {
+    bottom: 30px;
+  }
+}
+@include breakpoint(larger-desktop) {
+  .container {
+    max-width: 90%;
+  }
+  .banner_content h1 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+  .banner_content .shape-1 {
+    right: 100px;
+  }
+  .banner_image {
+    margin-left: 0;
+  }
+  .yellowgradient-btn,
+  .bluegradient-btn {
+    font-size: 15px;
+    padding: 15px 16px;
+  }
+  .title_block h3 {
+    font-size: 28px;
+  }
+  .title_block img {
+    height: 40px;
+    width: 40px;
+  }
+  .yoga .yoga-slider-outer-block .yoga-content h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .video-sec_content h2 {
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+  .video-btn-slider {
+    bottom: 16px;
+  }
+  .invited-session-block .profile .profile-image {
+    height: 110px !important;
+    width: 110px !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .navbar-nav .input-group {
+    display: none;
+  }
+  .invite-people .input-text input {
+    width: 360px;
+  }
+}
+@include breakpoint(large-desktop) {
+  .video-sec_content {
+    margin-top: 50px;
+  }
+  .featured-channels .blue-shape {
+    display: none;
+  }
+  .owl-carousel .owl-nav {
+    top: inherit;
+    bottom: -50px;
+  }
+  .rmt-50 {
+    margin-top: 50px;
+  }
+  hr {
+    margin: 60px 0px;
+  }
+  .invite-frnd-link h5 {
+    font-size: 20px !important;
+    line-height: 32px !important;
+  }
+  .invited-session-block .profile .profile-image {
+    height: 95px !important;
+    width: 95px !important;
+  }
+  .invited-session-block .profile .user-info h4 {
+    font-size: 28px !important;
+  }
+  .common-page-ttl h2:before {
+    right: -70px;
+  }
+  .common-page-ttl h2 {
+    font-size: 46px;
+    line-height: 66px;
+  }
+  .line {
+    width: 100%;
+  }
+  .invited-people {
+    display: block !important;
+  }
+  .invite-people {
+    width: fit-content;
+  }
+  .invite-people .input-text input {
+    width: 540px;
+  }
+  .result-count {
+    font-size: 18px !important;
+  }
+  .page .page-result .quantity-form {
+    margin-left: 20px !important;
+  }
+  .filter-list .pl-40 {
+    padding-left: 0;
+  }
+  .page .row > div {
+    display: block !important;
+  }
+  .page-result {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .banner_content h1 {
+    font-size: 36px !important;
+    line-height: 46px;
+  }
+  .banner_content p {
+    font-size: 20px;
+    br {
+      display: none;
+    }
+  }
+  .banner_content .shape-1 {
+    right: -10px;
+  }
+  .invited-session-block .session-btn-block a.note {
+    font-size: 20px !important;
+  }
+}
+@include breakpoint(desktop) {
+  .container {
+    max-width: 90%;
+  }
+  .pl-40 {
+    padding-left: 0;
+  }
+  .invite-people {
+    display: block;
+  }
+  .offcanvas-header {
+    display: block;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #12043e;
+    z-index: 99;
+    transition: visibility 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+  .yellowgradient-btn,
+  .bluegradient-btn {
+    width: fit-content;
+    min-width: 230px;
+  }
+  .header ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .featured-channels_right_block {
+    margin-top: 50px;
+  }
+  .featured-channels_left_block {
+    border-right: 0;
+  }
+  .featured-channels_list .accordion-item:not(:last-child)::before,
+  .featured-channels_left_block h2::after {
+    width: 100% !important;
+  }
+  .footer .row > div {
+    margin-bottom: 30px;
+  }
+  .featured-channels_left_block .sign_up {
+    margin-right: 0;
+  }
+  .accordion-item .accordion-header .accordion-button {
+    padding-right: 0 !important;
+  }
+  .invited-session-block {
+    margin-top: 50px;
+  }
+  .common-page-ttl h2 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+  .common-page-ttl h2:before {
+    right: 0px;
+    top: inherit;
+    bottom: -50px;
+  }
+  .input-search-box {
+    margin-right: 0;
+  }
+  .sorted_list {
+    margin-top: 50px;
+  }
+}
+@include breakpoint(tablets) {
+  .video-sort-shape {
+    display: none;
+  }
+  .invite-people .input-text input {
+    width: 450px;
+  }
+  .banner_image {
+    margin-top: 50px;
+  }
+  .banner_content h1 {
+    font-size: 52px;
+    line-height: 76px;
+  }
+  .mfp-content iframe {
+    width: 500px !important;
+    height: 400px;
+  }
+}
+@include breakpoint(phone) {
+  .banner_content h1 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .banner_content p {
+    font-size: 18px;
+  }
+  .invite-people {
+    width: 100%;
+  }
+  .d_block {
+    display: block !important;
+    .banner-btn {
+      display: block;
+      padding: 12px 20px;
+      text-align: center;
+      line-height: inherit;
+      margin-right: 0;
+    }
+  }
+  .banner_content .border-button {
+    margin-top: 25px;
+  }
+  .featured-channels_list .accordion-item .accordion-body ul li {
+    padding: 18px !important;
+  }
+
+  .yoga .yoga-slider-outer-block {
+    display: block !important;
+  }
+  .image-slider,
+  .yoga-content {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .yoga-content {
+    margin-top: 20px !important;
+  }
+  .video-sec-shape-1,
+  .video-sec-shape-2 {
+    display: none;
+  }
+  .mfp-content iframe {
+    width: 300px !important;
+    height: 250px;
+  }
+  .featured-channels_right_block .video-sec_content .viewer-btn h5 {
+    font-size: 18px;
+  }
+  .featured-channels_right_block .video-sec_content .viewer-btn {
+    padding: 8px 20px;
+  }
+  .featured-channels_right_block .video-sec_content .viewer-btn img {
+    width: 85%;
+    padding-right: 10px;
+  }
+  .invited-session-block.bg-white-custom {
+    padding: 40px !important;
+  }
+}
+@media (max-width: 600px) {
+  .common-page-banner {
+    padding-bottom: 100px;
+  }
+  .filter-list .video-btn-slider {
+    bottom: 16px;
+  }
+  .page-result {
+    display: block !important;
+  }
+  .page .page-result .quantity-form {
+    margin-top: 15px;
+    margin-left: 0 !important;
+  }
+  .common-page-ttl h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .video-profile-user {
+    display: block !important;
+  }
+  .user-information {
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+  .video-profile-user .user-image {
+    height: 90px;
+    width: 90px;
+  }
+  .video-profile-user .user-information h4 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .video-profile-user .user-information span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .invite-people .input-text input {
+    font-size: 14px;
+  }
+  .invite-people .input-text input {
+    width: 100%;
+  }
+  .invite-people .input-text a {
+    position: inherit;
+    transform: inherit;
+    margin-top: 15px;
+  }
+  .title_block img {
+    height: 34px;
+    width: 34px;
+  }
+  .featured-channels_left_block
+    .featured-channels_list
+    .accordion-item
+    .accordion-header
+    .accordion-button {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .common-page-ttl h2:before {
+    display: none;
+  }
+  .invite-people span {
+    font-size: 18px;
+  }
+  .profile {
+    display: block !important;
+  }
+  .user-info {
+    margin-left: 0 !important;
+    margin-top: 15px !important;
+  }
+  .invited-session-block .profile .user-info h4 {
+    font-size: 24px !important;
+  }
+  .invited-session-block .profile .user-info span {
+    font-size: 20px !important;
+    margin-top: 0 !important;
+  }
+  .invited-session-block .invite-frnd-link .input-text a {
+    position: inherit !important;
+    top: inherit !important;
+    transform: inherit !important;
+    margin-top: 15px !important;
+  }
+  .session-btn-block {
+    display: block !important;
+  }
+  a.note {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  .invited-session-block.bg-white-custom {
+    padding: 30px !important;
+  }
+  .invite-friend-block .invited-session-block .invite-frnd-link.light-blue-bg {
+    padding: 20px !important;
+  }
+  .sorted_list .popular-btn {
+    font-size: 17px !important;
+    padding: 12px 25px !important;
+  }
+  .video-btn-slider {
+    bottom: 6px;
+  }
+  .invite-friend-block .invited-session-block .profile .user-info span {
+    font-size: 18px !important;
+  }
+  .title_block h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@include breakpoint(small-device) {
+  .navbar-brand {
+    width: 60%;
+  }
+  .common-page-ttl {
+    padding-top: 100px !important;
+  }
+  .invited-session-block .profile .user-info h4 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .invite-friend-block .invited-session-block .profile .user-info span {
+    font-size: 17px !important;
+  }
+  .invited-session-block.bg-white-custom {
+    padding: 28px !important;
+  }
+
+  .sorted_list .popular-btn {
+    font-size: 15px !important;
+    padding: 12px 25px !important;
+  }
+}
+@media (max-width: 322px) {
+  .common-page-ttl h2 {
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+  .invite-friend-block .invited-session-block .profile .user-info span {
+    font-size: 15px !important;
+  }
+  .invite-frnd-link h5 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .invite-friend-block
+    .invited-session-block
+    .invite-frnd-link
+    .input-text
+    input {
+    font-size: 12px !important;
+  }
+  .yellowgradient-btn.big-btn {
+    min-width: inherit;
+  }
+  .video-btn-slider {
+    bottom: 0;
+  }
+  .title_block h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

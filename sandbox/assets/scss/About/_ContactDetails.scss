@@ -1,0 +1,46 @@
+.Convinced {
+  padding-top: 180px;
+  .Convinced_Image {
+    img {
+      border-radius: 0.4rem;
+    }
+  }
+  .Doted_Circle {
+    top: -2rem;
+    left: -1.4rem;
+    transform: translate3d(0px, -4px, 0px);
+    background-image: radial-gradient($yellow 2px, transparent 2.5px);
+    position: absolute;
+    background-size: 0.75rem 0.75rem;
+    opacity: 0.4;
+    width: 140px;
+    height: 250px;
+    z-index: -1;
+  }
+}
+.AddressList {
+  li {
+    display: flex;
+    .AddIcon {
+      margin-right: 30px;
+      i {
+        font-size: 28px;
+        color: $yellow;
+        line-height: initial;
+      }
+    }
+    div {
+      h5 {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      address,
+      p,
+      p > a {
+        font-size: 16px;
+        color: $gray;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

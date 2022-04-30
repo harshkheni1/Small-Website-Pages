@@ -1,0 +1,56 @@
+.OurStrategy {
+  padding-top: 140px;
+  margin-bottom: 8rem;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   right: 0;
+  //   z-index: 0;
+  //   border: 0 solid transparent;
+  //   border-left-width: 100vw;
+  //   border-top-width: 4rem;
+  //   top: -4rem;
+  //   border-left-color: $cream;
+  // }
+  // .row > div {
+  //   padding: 0 2.5rem;
+  // }
+}
+.Steps {
+  padding: 0px 35px;
+  .OurStrategy_Card {
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 0.4rem;
+
+    .NumberCircle {
+      background-color: $yellow-IconBg;
+      font-size: 1.3rem;
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      text-align: center;
+      color: $yellow;
+      border-radius: 100%;
+      line-height: 60px;
+      text-align: center;
+      font-weight: 700;
+      flex: none;
+    }
+    h4 {
+      line-height: 1.45;
+      font-size: 20px;
+    }
+
+    &.ml-85 {
+      margin-left: 85px;
+    }
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
